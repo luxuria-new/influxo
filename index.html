@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="chat-container">
+        <div id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Escreva uma mensagem..."/>
+        <button onclick="sendMessage()">Enviar</button>
+    </div>
+
+    <button id="meuBotao">Clique aqui</button>
+    <input type="text" id="campoTexto" placeholder="Digite algo...">
+
+    <div id="areaMouse" style="width: 200px; height: 200px; background-color: lightblue;">
+        Passe o mouse aqui
+    </div>
+
+    <script>
+        function sendMessage() {
+            const userInput = document.getElementById("user-input").value;
+            document.getElementById("chat-box").innerHTML += "<p>Usuário: " + userInput + "</p>";
+        }
+
+        document.getElementById("meuBotao").addEventListener("click", () => {
+            alert("Você clicou no botão!");
+        });
+
+        document.getElementById("campoTexto").addEventListener("input", (event) => {
+            console.log("Conteúdo do campo:", event.target.value);
+        });
+
+        window.addEventListener("scroll", () => {
+            console.log("Você está rolando a página!");
+        });
+
+        document.getElementById("areaMouse").addEventListener("mouseover", () => {
+            alert("Você passou o mouse sobre a área!");
+        });
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            
+        }
+        document.getElementById("areaMouse").addEventListener("animationend", () => {
+            alert("Você passou o mouse sobre a área!");
+        });
+
+    </script>
+</body>
+</html>
